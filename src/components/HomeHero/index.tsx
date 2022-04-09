@@ -20,23 +20,17 @@ function HomeHero() {
               Nome: <span className="blue">Christian Pereira,</span>
             </div>
             <div>
-              Idade: <span className="blue">21 anos;</span>
+              Idade: <span className="blue">21 anos</span>
             </div>
             {'\u007D'}
           </CodeItem>
           <CodeItem>
             <span className="purple">Cargo</span> {'\u007B'}
             <div>
-              Graduação:{' '}
-              <span className="blue">
-                Análise e Desenvolvimento de Sistemas,
-              </span>
-            </div>
-            <div>
               Área de atuação: <span className="blue">Dev Full stack,</span>
             </div>
             <div>
-              Trabalho: <span className="blue">Freelancer;</span>
+              Trabalho: <span className="blue">Freelancer</span>
             </div>
             {'\u007D'}
           </CodeItem>

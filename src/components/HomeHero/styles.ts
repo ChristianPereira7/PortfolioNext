@@ -9,12 +9,14 @@ export const Container = styled.section`
   margin-top: 5rem;
 
   > img {
-    width: 20rem;
+    width: 26rem;
     flex: 1;
+    border-radius: 3rem;
   }
 
   > div {
     flex: 4;
+    margin-left: 10px;
   }
 
   @media (max-width: 1450px) {
@@ -93,6 +95,7 @@ export const CodeItem = styled.pre`
   width: 30rem;
   align-self: flex-start;
   transition: 1s;
+  border-radius: 0.5rem;
 
   @media (max-width: 1450px) {
     width: 18rem;
@@ -109,7 +112,7 @@ export const CodeItem = styled.pre`
   }
 
   &:last-child {
-    width: 24rem;
+    align-self: flex-end;
   }
 
   > div {
