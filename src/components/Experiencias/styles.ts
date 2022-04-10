@@ -9,9 +9,6 @@ export const Container = styled.section`
     display: flex;
     gap: 1.5rem;
 
-    padding-bottom: 8rem;
-    border-bottom: 3px solid ${({ theme }) => theme.primary};
-
     @media (max-width: 1000px) {
       gap: 1rem;
     }
