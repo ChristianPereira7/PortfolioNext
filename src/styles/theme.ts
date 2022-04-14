@@ -3,6 +3,8 @@ const theme = {
   backgroundLight: '#1B2138',
   primary: '#CFDBD5',
   secondary: '#7AC7E3',
+  buttonColor: '#2d00f7',
+  buttonColorEffect: '#100057',
   gradient: 'linear-gradient(225deg, #313860 0%, #11172B 100%);',
   text: '#848DA0',
   textHighlight: '#444B5B',

@@ -6,7 +6,6 @@ export const Container = styled.section`
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
 
   > img {
     width: 26rem;

@@ -8,8 +8,7 @@ function HomeHero() {
       <img src={picture} alt="Perfil" />
       <div>
         <TextContainer>
-          <h1>Olá,</h1>
-          <h2>Me chamo Christian</h2>
+          <h2>Portfólio:</h2>
         </TextContainer>
 
         <InfosContainer>

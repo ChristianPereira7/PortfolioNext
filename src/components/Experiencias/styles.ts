@@ -31,6 +31,7 @@ export const ItemContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border-radius: 0.5rem;
 
     transition: 0.5s;
 

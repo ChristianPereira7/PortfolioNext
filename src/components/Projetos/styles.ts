@@ -20,6 +20,37 @@ export const Container = styled.section`
       gap: 2rem;
     }
   }
+  > button {
+    background: ${({ theme }) => theme.buttonColor};
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 27rem;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      background: ${({ theme }) => theme.buttonColorEffect};
+    }
+
+    a {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    @media (max-width: 500px) {
+      padding: 1rem;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
 `;
 
 export const ProjetoContainer = styled.div<ProjetoProps>`
@@ -64,9 +95,10 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
   > section {
     width: 50rem;
     height: 100%;
-    background: url(${props => props.imgUrl}) mo-repeat center;
+    background: url(${props => props.imgUrl}) no-repeat center;
     background-size: cover;
     position: relative;
+    opacity: 0.75;
 
     > div.overlay {
       position: absolute;
@@ -156,6 +188,31 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
         > section > div.text {
           left: 1rem;
         }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    height: 17rem;
+  }
+
+  @media (max-width: 450px) {
+    > button {
+      height: auto;
+
+      a {
+        font-size: 1.5rem;
+        gap: 0.8rem;
+      }
+    }
+
+    > section > div.text {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
       }
     }
   }
