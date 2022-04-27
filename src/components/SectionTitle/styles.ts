@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+  margin-bottom: 4rem;
 
   h1 {
     color: ${({ theme }) => theme.primary};

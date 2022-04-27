@@ -4,11 +4,11 @@ import picture from '../../assets/perfil_vagas.jpg';
 
 function HomeHero() {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <img src={picture} alt="Perfil" />
       <div>
         <TextContainer>
-          <h2>Portfólio:</h2>
+          <h2>Portfólio</h2>
         </TextContainer>
 
         <InfosContainer>

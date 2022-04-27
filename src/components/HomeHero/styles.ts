@@ -8,9 +8,11 @@ export const Container = styled.section`
   justify-content: center;
 
   > img {
-    width: 26rem;
+    width: 17rem;
     flex: 1;
-    border-radius: 3rem;
+    border-radius: 0.9rem;
+    margin-left: 7rem;
+    margin-bottom: 5rem;
   }
 
   > div {
@@ -38,6 +40,10 @@ export const Container = styled.section`
     flex-direction: column-reverse;
     > div {
       width: 100%;
+    }
+    > img {
+      margin-right: 7rem;
+      width: 12rem;
     }
   }
 `;

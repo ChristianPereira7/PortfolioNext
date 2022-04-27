@@ -33,6 +33,8 @@ export const ItemContainer = styled.div`
     justify-content: flex-start;
     border-radius: 0.5rem;
 
+    max-width: 19rem;
+
     transition: 0.5s;
 
     h1 {

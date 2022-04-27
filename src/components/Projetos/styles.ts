@@ -1,219 +1,46 @@
 import styled from 'styled-components';
 
-interface ProjetoProps {
-  imgUrl: string;
-}
-
-export const Container = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-
-  > section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-
-    @media (max-width: 1000px) {
-      gap: 2rem;
-    }
-  }
-  > button {
-    background: ${({ theme }) => theme.buttonColor};
-    padding: 0.8rem 3rem;
-    border-radius: 0.5rem;
-    border: none;
-    width: 27rem;
-    margin: 0 auto;
+export const Card = styled.div`
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 4rem;
+    border-radius: 5px;
+    color: #fff;
+    width: 25%;
+    float: left;
     text-align: center;
-    transition: 0.5s;
-    margin-top: 3rem;
-    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    transition: all linear 0.2s;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
 
     &:hover {
-      background: ${({ theme }) => theme.buttonColorEffect};
+      animation-name: fade-img;
+      animation-duration: 2s;
+
+      background-color: #0f1426;
     }
 
-    a {
-      text-transform: uppercase;
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
-
-    @media (max-width: 500px) {
-      padding: 1rem;
-
-      a {
-        font-size: 1rem;
-      }
-    }
-  }
-`;
-
-export const ProjetoContainer = styled.div<ProjetoProps>`
-  width: 100%;
-  display: flex;
-  height: 25rem;
-  align-items: flex-end;
-  position: relative;
-
-  &:hover {
-    > section {
-      > div.text {
-        right: -12rem;
-      }
-      > div.overlay {
-        opacity: 0.4;
-      }
-    }
-    > button a {
-      color: ${({ theme }) => theme.primary};
-    }
-  }
-
-  > button {
-    height: 4rem;
-    margin: 0 0 3rem 5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-
-    a {
-      color: #fff;
-      font-size: 2rem;
-      font-weight: 300;
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      transition: 0.5;
-    }
-  }
-
-  > section {
-    width: 50rem;
-    height: 100%;
-    background: url(${props => props.imgUrl}) no-repeat center;
-    background-size: cover;
-    position: relative;
-    opacity: 0.75;
-
-    > div.overlay {
-      position: absolute;
+    .itemImage img {
       width: 100%;
-      height: 100%;
-      background-color: ${({ theme }) => theme.gradient};
-      opacity: 0.75;
-      transition: 0.5s;
-    }
-    > div.text {
-      position: absolute;
-      top: 3rem;
-      right: -10rem;
-      transition: 0.5s;
-      width: fit-content;
-
-      h1 {
-        color: ${({ theme }) => theme.primary};
-        font-size: 2.5rem;
-        text-shadow: 4px 5px 22px #11172b;
-      }
-
-      h2 {
-        color: ${({ theme }) => theme.secondary};
-        font-size: 2rem;
-        font-weight: 300;
-        text-shadow: 4px 5px 22px #11172b;
-      }
-    }
-  }
-
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-
-    > button {
-      margin: 3rem 5rem 0 0;
+      border-radius: 5px;
+      transform: scale(1.1);
     }
 
-    > section > div.text {
-      text-align: right;
-      right: 0;
-      left: -10rem;
+    .itemNome {
+      font-weight: bold;
+      padding: 20px 30px 30px;
     }
 
-    &:hover {
-      > section > div.text {
-        left: -12rem;
-      }
-    }
-  }
-
-  @media (max-width: 1450px) {
-    > section {
-      width: 100%;
-
-      > div.text {
-        left: 1rem;
-        top: 1rem;
-      }
-    }
-    > button {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-      margin: 0;
-    }
-
-    &:nth-child(even) {
-      flex-direction: row;
-
-      > section {
-        width: 100%;
-
-        > div.text {
-          left: 1rem;
-          top: 1rem;
-          text-align: left;
-        }
-      }
-      > button {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        margin: 0;
-      }
-      &:hover {
-        > section > div.text {
-          left: 1rem;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 700px) {
-    height: 17rem;
-  }
-
-  @media (max-width: 450px) {
-    > button {
-      height: auto;
-
-      a {
-        font-size: 1.5rem;
-        gap: 0.8rem;
-      }
-    }
-
-    > section > div.text {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        font-size: 1rem;
-      }
+    .itemDesc {
+      font-weight: bold;
+      margin-bottom: 20px;
     }
   }
 `;
